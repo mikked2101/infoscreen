@@ -4,7 +4,7 @@ function DadJokes() {
   const [joke, setJoke] = useState({});
 
   function getJoke() {
-    fetch("https://www.reddit.com/r/dadjokes/top.json?t=now&limit=1")
+    fetch("https://www.reddit.com/r/dadjokes/top.json?t=hour&limit=1")
       .then((response) => response.json())
       .then((json) => setJoke(json.data.children[0].data));
   }

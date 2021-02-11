@@ -12,10 +12,10 @@ function Bikes() {
     service
       .getBikeRentalStationsByPosition(
         {
-          latitude: 63.428311,
-          longitude: 10.392514,
+          latitude: 59.930383580561205,
+          longitude: 10.735919840881245,
         },
-        230
+        300
       )
       .then((data) => setBikeStations(data));
   }, []);
